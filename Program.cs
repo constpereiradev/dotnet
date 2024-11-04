@@ -227,9 +227,36 @@ if(total < 15){
 Console.WriteLine(mensagem);
 
 
-
 int numero1 = 1000;
 int numero2 = 450;
 Console.WriteLine(Math.Max(numero1, numero2));
 
+
+
+//Foreach
+
+string[] linguagens = new string[3];
+linguagens[0] = "PHP";
+linguagens[1] = "Javascript";
+linguagens[2] = "C#";
+
+//Console.WriteLine(linguagens[0]);
+
+string[] projetos = ["Kenobi", "Vapt"];
+//Console.WriteLine(projetos.Length);
+
+/*
+foreach (string linguagem in linguagens)
+{
+    Console.WriteLine(linguagem);
+}
+*/
+
+string[] idPedidos = ["B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"];
+foreach (string id in idPedidos)
+{
+    if(id.StartsWith("B")){
+        Console.WriteLine($"{id} Começa com a letra B.");
+    }
+}
 
