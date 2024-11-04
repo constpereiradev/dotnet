@@ -260,3 +260,57 @@ foreach (string id in idPedidos)
     }
 }
 
+
+
+
+
+decimal[] sophia = [90, 86, 87, 98, 100];
+decimal[] andrew = [92, 89, 81, 96, 90];
+decimal[] emma = [90, 85, 87, 98, 68];
+decimal[] logan = [90, 95, 87, 88, 96];
+
+decimal sophiaSum = 0;
+decimal andrewSum = 0;
+decimal emmaSum = 0;
+decimal loganSum = 0;
+
+decimal sophiaScore;
+decimal andrewScore;
+decimal emmaScore;
+decimal loganScore;
+
+foreach (decimal nota in sophia)
+{
+    sophiaSum += nota;
+}
+sophiaScore = (decimal)sophiaSum / currentAssignments;
+
+
+foreach (decimal nota in andrew)
+{
+    andrewSum += nota;
+}
+andrewScore = (decimal)andrewSum / currentAssignments;
+
+foreach (decimal nota in emma)
+{
+    emmaSum += nota;
+}
+emmaScore = (decimal)emmaSum / currentAssignments;
+
+
+foreach (decimal nota in logan)
+{
+    loganSum += nota;
+}
+loganScore = (decimal)loganSum / currentAssignments;
+
+
+Console.WriteLine("Notas\t\n");
+Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
+Console.WriteLine("Andrew:\t\t" + andrewScore + "\tB+");
+Console.WriteLine("Emma:\t\t" + emmaScore + "\tB");
+Console.WriteLine("Logan:\t\t" + loganScore + "\tA-");
+
+Console.WriteLine("Aperte enter para continuar.");
+Console.ReadLine();
